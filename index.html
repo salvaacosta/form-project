@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    
+    <div class="image-container">
+        <div class="logo-container">
+            <div class="logo-image"><img src="./odin-lined.png" alt=""><p>ODIN</p></div>
+            
+        </div>
+        <p>Foto de <a href="https://unsplash.com/es/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> en <a href="https://unsplash.com/es/fotos/planta-de-hoja-verde-en-fotografia-de-primer-plano-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+    </div>
+    <div class="content">
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+
+        <form action="">
+            <div class="input-container">
+                <p>Let's do this!</p>
+                <div class="left-right-container">
+                    <div class="input-left">   
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required minlength="2">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-right">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" name="phone-number" pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$" required>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <p class="inactive" id="no-match">* Passwords do not match</p>
+                    </div>
+                </div>
+            </div>
+            <button>Create Account</button>
+        </form>
+        <p id="have-account">Already have an account? <a href="#">Log In</a></p>
+            
+    </div>
+    
+</body>
+</html>

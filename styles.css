@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+}
+
+.image-container {
+    background-image: url("./halie-west.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 1000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 180px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-image {
+    display:flex;
+    color: #fff;
+}
+
+.logo-image img {
+    height: 140px;
+}
+
+.logo-image p {
+    margin-left: 10px;
+    font-family: Norse;
+    color: #fff;
+    font-size: 120px;
+}
+.image-container p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.image-container p a {
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.content p {
+    width: 725px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    margin-top: 30px;
+}
+
+.input-container {
+    border-top: 0.5px solid #dadada;
+    background-color: #fff;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.left-right-container {
+    display: flex;
+    
+}
+
+.input-left, .input-right {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+
+
+.input-left input, .input-right input{
+    margin-bottom: 20px;
+    width: 250px;
+    height: 34px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+}
+
+.input-right {
+    margin-left: 80px;
+}
+
+#password:invalid {
+    border: 1px solid #e91414;
+    box-shadow: 0 0 5px rgba(245, 63, 63, 0.7);
+}
+
+.input-left input:focus, .input-right input:focus {
+    border: 1px solid #4c23ff;
+    box-shadow: 0 0 5px rgba(82, 63, 245, 0.7);
+}
+
+
+
+.input-left input:valid, #last-name:valid, #phone-number:valid {
+    border: 1px solid #14e949;
+    box-shadow: 0 0 5px rgba(63, 245, 78, 0.7);
+}
+
+button {
+    color: #fff;
+    background-color: #34523b;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 45px 15px 45px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+#have-account {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -130px;
+}
+
+#have-account a {
+    color: #34523b;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.inactive {
+    display: none;
+}
+
+#no-match {
+    color: #e91414;
+    font-size: 10px;
+    margin-top: -19px;
+    padding: 0;
+}
+
+.error {
+    border: 1px solid #e91414;
+    box-shadow: 0 0 5px rgba(245, 63, 63, 0.7);
+}
+
+
